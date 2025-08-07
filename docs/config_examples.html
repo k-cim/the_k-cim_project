@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemples de Config – GridKeep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="../index.html" data-i18n="menu_home"></a>
+      <a href="../features.html" data-i18n="menu_features"></a>
+      <a href="../graphs.html" data-i18n="menu_graphs"></a>
+      <a href="../download.html" data-i18n="menu_download"></a>
+      <a href="../try.html" data-i18n="menu_try"></a>
+      <a href="manpage.html" data-i18n="menu_docs"></a>
+      <a href="../changelog.html" data-i18n="menu_changelog"></a>
+      <a href="../contact.html" data-i18n="menu_contact"></a>
+      <span class="lang-select" data-lang="fr">FR</span>
+      <span class="lang-select" data-lang="en">EN</span>
+    </nav>
+    <h1>Exemples de Config</h1>
+  </header>
+  <main>
+    <section class="section">
+      <h2>JSON classique</h2>
+      <pre>
+{
+  "project": "GridKeep",
+  "version": "7.0.0",
+  "settings": {
+    "ui": "dark",
+    "lang": "fr",
+    "auto_save": true
+  }
+}
+      </pre>
+      <h2>Batch d’actions (JSON)</h2>
+      <pre>
+[
+  {"op": "write", "key": "settings.lang", "value": "en"},
+  {"op": "read", "key": "settings.ui"}
+]
+      </pre>
+      <h2>INI, TOML et XML supportés :</h2>
+      <pre>
+[project]
+name = "GridKeep"
+version = "7.0.0"
+      </pre>
+      <pre>
+[settings]
+ui = "dark"
+lang = "en"
+auto_save = true
+      </pre>
+      <pre>
+<settings>
+  <ui>dark</ui>
+  <lang>fr</lang>
+  <auto_save>true</auto_save>
+</settings>
+      </pre>
+    </section>
+  </main>
+  <footer class="footer" data-i18n="footer_gpl"></footer>
+</body>
+</html>

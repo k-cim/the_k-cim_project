@@ -1,0 +1,21 @@
+{
+  "site_title": "GridKeep",
+  "slogan": "La multilothique JSON / INI / TOML / XML — Console et UI. Libérez vos données, gardez le contrôle.",
+  "menu_home": "Accueil",
+  "menu_features": "Fonctionnalités",
+  "menu_graphs": "Ensembles & Graphes",
+  "menu_download": "Télécharger",
+  "menu_try": "Démo en ligne",
+  "menu_docs": "Docs & Manpages",
+  "menu_changelog": "Changelog",
+  "menu_contact": "Contact",
+  "footer_gpl": "Logiciel libre sous licence GPL v3 – 100% Open Source – Propulsé par K-Cim",
+  "section_features_title": "Fonctionnalités",
+  "section_graphs_title": "Visualisation Ensembles & Graphes",
+  "section_docs_title": "Documentation et guides",
+  "section_try_title": "Démo en ligne",
+  "section_changelog_title": "Journal des versions",
+  "section_contact_title": "Communauté & contact",
+  "intro": "GridKeep permet de manipuler tous vos fichiers de config (JSON, INI, TOML, XML) via une CLI puissante et une interface graphique moderne. Visualisez vos ensembles, gérez vos graphes, automatisez vos pipelines. Sécurité, performance, extensibilité.",
+  "btn_download": "Télécharger maintenant"
+}

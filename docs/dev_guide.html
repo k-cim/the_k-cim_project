@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide Développeur – GridKeep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="../index.html" data-i18n="menu_home"></a>
+      <a href="../features.html" data-i18n="menu_features"></a>
+      <a href="../graphs.html" data-i18n="menu_graphs"></a>
+      <a href="../download.html" data-i18n="menu_download"></a>
+      <a href="../try.html" data-i18n="menu_try"></a>
+      <a href="manpage.html" data-i18n="menu_docs"></a>
+      <a href="../changelog.html" data-i18n="menu_changelog"></a>
+      <a href="../contact.html" data-i18n="menu_contact"></a>
+      <span class="lang-select" data-lang="fr">FR</span>
+      <span class="lang-select" data-lang="en">EN</span>
+    </nav>
+    <h1>Guide Développeur</h1>
+  </header>
+  <main>
+    <section class="section">
+      <h2>API Python & architecture modulaire</h2>
+      <ul>
+        <li>Importer GridKeep comme bibliothèque :
+          <pre>import gridkeep.core.core_engine as gk</pre>
+        </li>
+        <li>Lire un fichier JSON :
+          <pre>data = gk.load_json("monfichier.json")</pre>
+        </li>
+        <li>Accéder à une clé profonde :
+          <pre>value = gk.get_key(data, "config.user.settings.theme")</pre>
+        </li>
+        <li>Ajouter un parser personnalisé :
+          <pre>
+# Implémenter votre classe MyParser, puis
+gk.register_parser("myformat", MyParser)
+          </pre>
+        </li>
+        <li>Écrire un plugin de validation :
+          <pre>
+def validate_custom(data):
+    # code ici
+    return True
+gk.register_validator("myplugin", validate_custom)
+          </pre>
+        </li>
+      </ul>
+      <h2>Plugins & extensions</h2>
+      <ul>
+        <li>Ajout de commandes CLI custom</li>
+        <li>Brancher des outils de visualisation externe (graphes, sets, pipelines)</li>
+        <li>Voir <a href="config_examples.html">exemples de config</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer" data-i18n="footer_gpl"></footer>
+</body>
+</html>

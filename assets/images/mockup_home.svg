@@ -1,0 +1,7 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="40" width="320" height="120" rx="28" fill="#a384fa"/>
+<ellipse cx="140" cy="100" rx="35" ry="22" fill="#85aaff" opacity="0.9"/>
+<ellipse cx="260" cy="100" rx="35" ry="22" fill="#7bdaff" opacity="0.9"/>
+<rect x="170" y="80" width="60" height="40" rx="15" fill="#fff" opacity="0.8"/>
+<text x="200" y="105" font-size="18" text-anchor="middle" fill="#442288">UI</text>
+</svg>

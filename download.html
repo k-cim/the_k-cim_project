@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="menu_download">Télécharger – GridKeep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="index.html" data-i18n="menu_home"></a>
+      <a href="features.html" data-i18n="menu_features"></a>
+      <a href="graphs.html" data-i18n="menu_graphs"></a>
+      <a href="download.html" data-i18n="menu_download"></a>
+      <a href="try.html" data-i18n="menu_try"></a>
+      <a href="docs/manpage.html" data-i18n="menu_docs"></a>
+      <a href="changelog.html" data-i18n="menu_changelog"></a>
+      <a href="contact.html" data-i18n="menu_contact"></a>
+      <span class="lang-select" data-lang="fr">FR</span>
+      <span class="lang-select" data-lang="en">EN</span>
+    </nav>
+    <h1 data-i18n="menu_download">Télécharger GridKeep</h1>
+  </header>
+  <main>
+    <section class="section">
+      <h2>Dernière version stable</h2>
+      <ul>
+        <li><b>GridKeep v7.0.0</b> (Ultimate CoreSuite)</li>
+        <li><a href="https://github.com/K-Cim/GridKeep/releases/latest" target="_blank">ZIP officiel (Github)</a></li>
+        <li>Signature SHA256 (cliquer pour afficher) : <code>9ad5c1...f7a2</code></li>
+        <li>Licence : <b>GPL v3</b> (utilisation, modification, redistribution libres)</li>
+      </ul>
+      <h2>Installation rapide</h2>
+      <pre>git clone https://github.com/K-Cim/GridKeep.git
+cd GridKeep
+python3 -m pip install -r requirements.txt
+./main.py
+      </pre>
+      <p>Ou voir la documentation d’installation avancée pour tous les systèmes : <a href="docs/manpage.html">manpage</a></p>
+    </section>
+  </main>
+  <footer class="footer" data-i18n="footer_gpl"></footer>
+</body>
+</html>
